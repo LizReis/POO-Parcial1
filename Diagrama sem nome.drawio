@@ -4,20 +4,20 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="7rndwXk2VnqxkLSh7UjE-1" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;Cliente&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;Section 1.1&lt;br&gt;Section 1.2&lt;br&gt;Section 1.3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;Section 2.1&lt;br&gt;Section 2.2&lt;br&gt;Section 2.3&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" vertex="1" parent="1">
-          <mxGeometry x="90" y="650" width="180" height="180" as="geometry" />
+        <mxCell id="7rndwXk2VnqxkLSh7UjE-1" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;Cliente&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- nome: String&lt;br&gt;- login: String&lt;br&gt;- senha: String&lt;br&gt;- carrinhos: ArrayList&amp;lt;Carrinho&amp;gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+ getNome(): String&lt;br&gt;+ getLogin(): String&lt;br&gt;+ getSenha(): String&lt;br&gt;+ getCarrinhos(): List&amp;lt;Carrinho&amp;gt;&lt;br&gt;&lt;br&gt;+ fazerLogin(String login, String senha): String&lt;br&gt;+ sairSistema(): String&lt;br&gt;+ criarCarrinho(String nome): Carrinho&lt;br&gt;+ removerCarrinho(String nome): String&lt;br&gt;+ adicionarProduto(ItemCompra itemCompra, Carrinho carrinho): String&lt;br&gt;+ removerProduto(ItemCompra itemCompra, Carrinho carrinho): String&lt;br&gt;+ verProdutosDepartamento(Departamento departamento): String&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="650" width="420" height="280" as="geometry" />
         </mxCell>
         <mxCell id="7rndwXk2VnqxkLSh7UjE-2" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;Departamento&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- nomeDepartamento: String&lt;br&gt;- produtos: ArrayList&amp;lt;Produto&amp;gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+ getNomeDepartamento(): String&lt;br&gt;+ getProdutos(): List&amp;lt;Produto&amp;gt;&lt;br&gt;+ adicionarProduto(): Produto&lt;br&gt;+ removerProduto(): String&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" vertex="1" parent="1">
-          <mxGeometry x="-50" y="160" width="220" height="180" as="geometry" />
+          <mxGeometry x="-150" y="100" width="220" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="7rndwXk2VnqxkLSh7UjE-3" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;Produto&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;Section 1.1&lt;br&gt;Section 1.2&lt;br&gt;Section 1.3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;Section 2.1&lt;br&gt;Section 2.2&lt;br&gt;Section 2.3&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" vertex="1" parent="1">
-          <mxGeometry x="210" y="160" width="180" height="180" as="geometry" />
+        <mxCell id="7rndwXk2VnqxkLSh7UjE-3" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;Produto&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- modelo: String&lt;br&gt;- tamanho: String&lt;br&gt;- cor: String&lt;br&gt;- preco: float&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+ getModelo(): String&lt;br&gt;+ getTamanho(): String&lt;br&gt;+ getCor(): String&lt;br&gt;+ getPreco(): String&lt;br&gt;- setModelo(): String&lt;br&gt;- setTamanho(): String&lt;br&gt;- setCor(): String&lt;br&gt;- setPreco(): String&lt;br&gt;+ descricaoProduto(): String&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" vertex="1" parent="1">
+          <mxGeometry x="230" y="40" width="180" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="7rndwXk2VnqxkLSh7UjE-4" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;ItemCompra&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;Section 1.1&lt;br&gt;Section 1.2&lt;br&gt;Section 1.3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;Section 2.1&lt;br&gt;Section 2.2&lt;br&gt;Section 2.3&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" vertex="1" parent="1">
-          <mxGeometry x="210" y="400" width="180" height="180" as="geometry" />
+        <mxCell id="7rndwXk2VnqxkLSh7UjE-4" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;ItemCompra&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- produto: Produto&lt;br&gt;- quantidade: int&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+ getProdutos(): Produto&lt;br&gt;+ getQuantidade(): int&lt;br&gt;+ setQuantidade(int quantidade): String&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" vertex="1" parent="1">
+          <mxGeometry x="210" y="400" width="220" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="7rndwXk2VnqxkLSh7UjE-5" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;Carrinho&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;Section 1.1&lt;br&gt;Section 1.2&lt;br&gt;Section 1.3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;Section 2.1&lt;br&gt;Section 2.2&lt;br&gt;Section 2.3&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" vertex="1" parent="1">
-          <mxGeometry x="-10" y="400" width="180" height="180" as="geometry" />
+        <mxCell id="7rndwXk2VnqxkLSh7UjE-5" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;Carrinho&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- nome: String&lt;br&gt;- cliente: Cliente&lt;br&gt;- itensCompra: ArrayList&amp;lt;ItemCompra&amp;gt;&lt;br&gt;- valorTotal: float&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+ getNome(): String&lt;br&gt;+ getCliente(): Cliente&lt;br&gt;+ getItensCompra: List&amp;lt;ItemCompra&amp;gt;&lt;br&gt;+ getValorTotal: float&lt;br&gt;+ setNome(String nome): String&lt;br&gt;+ setItensCompra: List&amp;lt;ItemCompra&amp;gt;&lt;br&gt;&lt;br&gt;+ aumentarQuantidade(int quantidade, ItemCompra item): int&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" vertex="1" parent="1">
+          <mxGeometry x="-320" y="370" width="350" height="230" as="geometry" />
         </mxCell>
         <mxCell id="7rndwXk2VnqxkLSh7UjE-6" value="" style="endArrow=diamondThin;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;startArrow=open;startFill=0;startSize=6;endSize=13;" edge="1" parent="1" source="7rndwXk2VnqxkLSh7UjE-4" target="7rndwXk2VnqxkLSh7UjE-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -25,7 +25,7 @@
             <mxPoint x="440" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7rndwXk2VnqxkLSh7UjE-7" value="" style="endArrow=diamondThin;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endFill=1;startArrow=open;startFill=0;startSize=6;endSize=13;" edge="1" parent="1" source="7rndwXk2VnqxkLSh7UjE-4" target="7rndwXk2VnqxkLSh7UjE-5">
+        <mxCell id="7rndwXk2VnqxkLSh7UjE-7" value="" style="endArrow=diamondThin;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.009;exitY=0.467;exitDx=0;exitDy=0;endFill=1;startArrow=open;startFill=0;startSize=6;endSize=13;exitPerimeter=0;" edge="1" parent="1" source="7rndwXk2VnqxkLSh7UjE-4" target="7rndwXk2VnqxkLSh7UjE-5">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="310" y="410" as="sourcePoint" />
             <mxPoint x="310" y="350" as="targetPoint" />
@@ -37,12 +37,12 @@
             <mxPoint x="440" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7rndwXk2VnqxkLSh7UjE-9" value="" style="endArrow=open;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="1" source="7rndwXk2VnqxkLSh7UjE-1" target="7rndwXk2VnqxkLSh7UjE-5">
+        <mxCell id="7rndwXk2VnqxkLSh7UjE-9" value="" style="endArrow=open;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endFill=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="7rndwXk2VnqxkLSh7UjE-1" target="7rndwXk2VnqxkLSh7UjE-5">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-50" y="720" as="sourcePoint" />
-            <mxPoint x="70" y="720" as="targetPoint" />
+            <mxPoint x="50" y="620" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="35" y="740" />
+              <mxPoint x="-232" y="790" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -51,7 +51,7 @@
             <mxPoint x="100" y="750" as="sourcePoint" />
             <mxPoint x="45" y="590" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="345" y="740" />
+              <mxPoint x="375" y="790" />
             </Array>
           </mxGeometry>
         </mxCell>
